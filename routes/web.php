@@ -6,6 +6,8 @@ use App\Http\Controllers\HomepageController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\KategoriController;
 
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -33,22 +35,26 @@ Route::get('/about', [HomepageController::class, 'about']);
 Route::get('/kontak', [HomepageController::class, 'kontak']);
 Route::get('/kategori', [HomepageController::class, 'kategori']);
 
-Route::group(['prefix'=> 'admin'], function () {
-    Route::get('/', 'DashboardController@index');
-    //route kategori
-   Route::resource('kategori', KategoriController::class);
+
+
+Route::prefix('admin')->group(function () {
+    Route::get('/', [DashboardController::class, 'index']);
+    Route::resource('kategori', KategoriController::class);
 });
 
-Route::get('/admin', [DashboardController::class, 'index']);
+Route::prefix('/mahasiswa')->group(function(){
 
-//Route::group(['prefix'=>'admin','as'=>'dashboard'], function(){
-//    Route::get('/', 'DashboardController@index')->kategori('index');
-//    Route::get('connect', 'DashboardController@connect')->kategori('connect');
-//});
+    Route::get('/pendaftaran', function(){
+        return 'Halaman Pendaftaran';
+    })->name('mahasiswa.pendaftaran');
 
+    Route::get('/ujian', function(){
+        return 'Halaman Ujian';
+    })->name('mahasiswa.ujian');
 
-//Route::group(['prefix' => 'admin'], function(){
+    Route::get('/nilai', function(){
+        return 'Halaman Nilai';
+    })->name('mahasiswa.nilai');
 
-//    Route::get('/', 'DashboardController@index');
+});
 
-//});
