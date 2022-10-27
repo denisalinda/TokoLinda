@@ -44,17 +44,26 @@ Route::prefix('admin')->group(function () {
 
 Route::prefix('/mahasiswa')->group(function(){
 
-    Route::get('/pendaftaran', function(){
-        return 'Halaman Pendaftaran';
-    })->name('mahasiswa.pendaftaran');
+    Route::get('pendaftaran', function () {
+        $title = 'Pendaftaran';
+        $text = 'Halaman Pendaftaran';
 
-    Route::get('/ujian', function(){
-        return 'Halaman Ujian';
-    })->name('mahasiswa.ujian');
+        return view('mahasiswa.index', compact('title', 'text'));
+    });
 
-    Route::get('/nilai', function(){
-        return 'Halaman Nilai';
-    })->name('mahasiswa.nilai');
+    Route::get('ujian', function () {
+        $title = 'ujian';
+        $text = 'Halaman Ujian';
+
+        return view('mahasiswa.index', compact('title', 'text'));
+    });
+
+    Route::get('nilai', function () {
+        $title = 'Nilai';
+        $text = 'Halaman Nilai';
+
+        return view('mahasiswa.index', compact('title', 'text'));
+    });
 
 });
 
