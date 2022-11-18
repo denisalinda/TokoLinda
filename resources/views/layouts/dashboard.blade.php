@@ -37,19 +37,19 @@
                     <div class="sb-sidenav-menu">
                         <div class="nav">
                             <div class="sb-sidenav-menu-heading">Core</div>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="{{ Route  ('admin.dashboard') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{ Route  ('admin.kategori') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa fa-product-hunt"></i></div>
                                 Produk
                             </a>
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{ Route  ('admin.transaksi') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa fa-exchange"></i></div>
                                 Transaksi
                             </a>
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="{{ Route  ('admin.laporan') }}">
                                 <div class="sb-nav-link-icon"><i class="fas fa fa-book"></i></div>
                                 Laporan
                             </a>
@@ -62,10 +62,9 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Dashboard</h1>
-                        <ol class="breadcrumb mb-4">
-                            <li class="breadcrumb-item active">Dashboard</li>
-                        </ol>
+                        <h1 class="mt-4">{{$title}}</h1>
+                        @yield('content')
+
                     </div>
                 </main>
                 <footer class="py-4 bg-light mt-auto">
