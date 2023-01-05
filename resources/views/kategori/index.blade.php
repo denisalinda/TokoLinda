@@ -6,7 +6,7 @@
         <div class="col">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Kategori Produk</h4>
+                    <h4 class="card-title">Kategori Film</h4>
                     <div class="card-tools">
                         <a href="{{ Route ('create.kategori') }}" class="btn btn-sm btn-primary">
                             Baru
@@ -35,8 +35,8 @@
                                     <th width="50px">No</th>
                                     <th>Gambar</th>
                                     <th>Kode</th>
-                                    <th>Nama</th>
-                                    <th>Jumlah Produk</th>
+                                    <th>Genre</th>
+                                    <th>Jumlah </th>
                                     <th></th>
                                 </tr>
                             </thead>
@@ -44,7 +44,7 @@
                                 <tr>
                                     <td>1</td>
                                     <td>
-                                        <img src="{{ asset('assets/image/kat1.jpg') }}" alt="kategori 1" width='150px'>
+                                        <img src="{{ asset('assets/image/film.jpg') }}" alt="kategori 1" width='150px'>
                                         <div class="row mt-2">
                                             <div class="col">
                                                 <input type="file" name="gambar" id="gambar">
@@ -54,9 +54,9 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>LL-1</td>
-                                    <td>Menu 1</td>
-                                    <td>12 Produk</td>
+                                    <td>Film-1</td>
+                                    <td>Film</td>
+                                    <td>112 Produk</td>
                                     <td>
                                         <a href="{{ Route ('edit.kategori') }}" class="btn btn-smbtn-primary mr-2 mb-2">
                                             Edit
@@ -69,7 +69,7 @@
                                 <tr>
                                     <td>2</td>
                                     <td>
-                                        <img src= {{ asset('assets/image/kat2.jpg') }} alt="kategori 2" width='150px'>
+                                        <img src= {{ asset('assets/image/drakor.jpg') }} alt="kategori 2" width='150px'>
                                         <div class="row mt-2">
                                             <div class="col">
                                                 <input type="file" name="gambar" id="gambar">
@@ -79,9 +79,9 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>LL-2</td>
-                                    <td>Menu 2</td>
-                                    <td>20 Produk</td>
+                                    <td>drakor-2</td>
+                                    <td>Drama Korea</td>
+                                    <td>200 Produk</td>
                                     <td>
                                         <a href="{{ Route ('edit.kategori') }}" class="btn btn-smbtn-primary mr-2 mb-2">
                                             Edit
@@ -94,7 +94,7 @@
                                 <tr>
                                     <td>3</td>
                                     <td>
-                                        <img src="{{ asset('assets/image/kat3.jpg') }}" alt="kategori 3" width='150px'>
+                                        <img src="{{ asset('assets/image/horor.jpg') }}" alt="kategori 3" width='150px'>
                                         <div class="row mt-2">
                                             <div class="col">
                                                 <input type="file" name="gambar" id="gambar">
@@ -104,9 +104,9 @@
                                             </div>
                                         </div>
                                     </td>
-                                    <td>LL-3</td>
-                                    <td>Menu 3</td>
-                                    <td>20 Produk</td>
+                                    <td>Horor-01</td>
+                                    <td>Horror</td>
+                                    <td>90 Produk</td>
                                     <td>
                                         <a href="{{ Route ('edit.kategori') }}" class="btn btn-smbtn-primary mr-2 mb-2">
                                             Edit

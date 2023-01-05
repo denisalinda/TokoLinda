@@ -13,33 +13,33 @@
         </div>
         {{-- kategori produk pertama --}}
         <div class="card" style="width: 18rem;">
-            <img src="{{ 'assets/kdrama.jpg' }}" class="card-img-top" alt="...">
+            <img src="{{ 'assets/tas.jpg' }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">K-Drama</h5>
+              <h5 class="card-title">Tas</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="{{ 'assets/film.jpg' }}" class="card-img-top" alt="...">
+            <img src="{{ 'assets/pakaian.jpg' }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Film</h5>
+              <h5 class="card-title">Pakaian</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="{{ 'assets/cinema.jpg' }}" class="card-img-top" alt="...">
+            <img src="{{ 'assets/sepatu.jpg' }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Cinema</h5>
+              <h5 class="card-title">Sepatu</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
-            <img src="{{ 'assets/anime.jpg' }}" class="card-img-top" alt="...">
+            <img src="{{ 'assets/makeup.jpg' }}" class="card-img-top" alt="...">
             <div class="card-body">
-              <h5 class="card-title">Anime</h5>
+              <h5 class="card-title">Make Up</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
